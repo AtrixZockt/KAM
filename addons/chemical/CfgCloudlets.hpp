@@ -63,7 +63,7 @@ class CfgCloudlets {
         position[] = {0,0,0};
     };
 
-    class KAT_TOXIC_GAS_PEFFECT: Default {
+    class GVAR(Toxic_Gas_Particles): Default {
         interval = 0.01;
         circleRadius = 0;
         circleVelocity[] = {0,0,0};

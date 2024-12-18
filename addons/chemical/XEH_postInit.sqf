@@ -109,7 +109,7 @@ GVAR(gasSources) = createHashMap;
 
     for "_i" from 0 to _particleObjectAmount do {
         _particleSource = "#particlesource" createVehicle _sourcePos;
-        _particleSource setParticleClass "KAT_TOXIC_GAS_PEFFECT";
+        _particleSource setParticleClass QGVAR(Toxic_Gas_Particles);
 
         if (_i == 0) then {
             _particleSource setParticleCircle [1, [0,0,0]];
@@ -117,7 +117,7 @@ GVAR(gasSources) = createHashMap;
             _particleSource setParticleCircle [_i * 10, [0,0,0]];
         };
 
-        _particleObjects pushBack _particleSource; 
+        _particleObjects pushBack _particleSource;
     };
 
     _gasLogic setVariable [QGVAR(particleObjects), _particleObjects, true];
